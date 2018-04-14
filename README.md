@@ -36,7 +36,7 @@
 - conda install -c conda-forge pillow
 - conda install -c numba numba
 
-# Language
+## Language
 Python 3.6
 
 
@@ -48,7 +48,11 @@ Download facenet pre trained model from above Google Drive Path and put it insid
 - trained_model/facenet/
 3. You are all set
 
-# Run
+## System Architecture Diagram
+1. GUI Architecture
+![image] (https://github.com/anilknayak/FaceRecognition/blob/master/ApplicationArchitecture.jpg)
+
+## Run
 1. For GUI application run app.py
 2. for training run train.py with your training instructions
 3. To update configuration file as per you training instruction go to [Configure Face Recognition - Not Ready]()

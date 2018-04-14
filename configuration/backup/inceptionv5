@@ -1,0 +1,41 @@
+{
+  "training_data_type_info":"FR-FaceRecognition,OD-ObjectDetection",
+  "training_data_type": "FR",
+  "prepare_data_from_pickle_file": false,
+  "pickle_data":{
+    "images":"data/training_images.pickle",
+    "labels":"data/training_label.pickle"
+  },
+  "pre_processing_required":false,
+  "raw_data_folder":{
+    "images":"data/images/original",
+    "labels":"data/labels"
+  },
+  "processed_data_folder":{
+    "images":"data/images/processed",
+    "labels":"data/labels"
+  },
+  "model_file":{
+    "restoration_model_required":false,
+    "restore_model":{
+      "model":"trained_model/nn_inception_v5/freeze_inception_net_v5.pb",
+      "model_graph":"trained_model/nn_inception_v5/freeze_inception_net_v5_grpah.pb"
+    }
+  },
+  "image_size":{
+    "height": 180,
+    "width": 180
+  },
+  "augmentation_required": true,
+  "augmented_data_size": 500,
+  "prepare_pickle_file": false,
+  "train_method_info":"CNN,INCEPTION,SVM,KNN,CNN-SVM,CNN-KNN",
+  "training_method":"CNN",
+  "network_config_file":"configuration/nn_architecture/inception_net_v5.config",
+  "classes" : "auto",
+  "training_size_percentage":90,
+  "random_shuffle":false,
+  "data_separation":"NORMAL",
+  "data_separation_info": "NORMAL, CROSS_VALIDATION"
+
+}

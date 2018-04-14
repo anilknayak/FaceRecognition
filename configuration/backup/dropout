@@ -1,0 +1,6 @@
+{
+                  "name": "dropout1",
+                  "type": "dropout",
+                  "dropout": 0.5,
+                  "output":"90x90x64"
+                },

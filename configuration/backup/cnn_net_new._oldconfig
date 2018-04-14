@@ -1,0 +1,105 @@
+{
+  "training":{
+    "training_steps":50,
+    "batch_size":30,
+    "learning_rate":0.001,
+    "stopping_loss_threshold_from_previous": 100,
+    "optimizer":"adam",
+    "loss":"softmax_cross_entropy",
+    "regularization_beta":0.01,
+    "nn_input_size":"auto",
+    "nn_output_size":"auto",
+    "tensor_name":"auto",
+    "class_label_no": 37
+  },
+  "model_file":{
+    "model_dir": "trained_model/nn_cnn",
+    "model_name": "freeze_conv_net_120.pb",
+    "model_graph":"freeze_conv_net_grpah_120.pb",
+    "restoration_model_required":false,
+    "restore_model":{
+      "model":"trained_model/nn_cnn/freeze_conv_net_120.pb",
+      "model_graph":"trained_model/nn_cnn/freeze_conv_net_grpah_120.pb"
+    }
+  },
+  "image" : {
+    "width":120,
+    "height":120,
+    "resize_required":false
+  },
+  "deep_neural_network":[
+                {
+                  "name": "conv0",
+                  "type": "conv",
+                  "filters": 32,
+                  "kernel": [3, 3],
+                  "strides": [1, 1],
+                  "padding": "SAME",
+                  "activation": "relu",
+                  "output":"120x120x32"
+                },
+                {
+                  "name": "maxpool0",
+                  "type": "maxpool",
+                  "pool_size": [2, 2],
+                  "strides": 2,
+                  "output":"60x60x32"
+                },
+                {
+                  "name": "conv1",
+                  "type": "conv",
+                  "filters": 64,
+                  "kernel": [3, 3],
+                  "strides": [1, 1],
+                  "padding": "SAME",
+                  "activation": "relu",
+                  "output":"60x60x64"
+                },
+                {
+                  "name": "maxpool1",
+                  "type": "maxpool",
+                  "pool_size": [2, 2],
+                  "strides": 2,
+                  "output":"30x30x64"
+                },
+                {
+                  "name": "conv2",
+                  "type": "conv",
+                  "filters": 128,
+                  "kernel": [3, 3],
+                  "strides": [1, 1],
+                  "padding": "SAME",
+                  "activation": "relu",
+                  "output":"30x30x128"
+                },
+                {
+                  "name": "maxpool2",
+                  "type": "maxpool",
+                  "pool_size": [2, 2],
+                  "strides": 2,
+                  "output":"15x15x128"
+                },
+                {
+                  "name": "flat",
+                  "type": "flat",
+                  "output":"1x1x28800"
+                },
+                {
+                  "name": "dense0",
+                  "type": "dense",
+                  "activation": "relu",
+                  "units": 1024
+                },
+                {
+                  "name": "dense1",
+                  "type": "dense",
+                  "activation": "relu",
+                  "units": 512
+                },
+                {
+                  "name": "output",
+                  "type": "output",
+                  "units": 37
+                }
+              ]
+}

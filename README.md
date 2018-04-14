@@ -1,4 +1,4 @@
-# Welcome to Face Recognition Using Various Deep Learning Architecture
+# Welcome to Face Recognition Using Moving Accumulator with various Deep Learning Architectures
 
 
 ## Required Python APIs to run the system

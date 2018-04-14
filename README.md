@@ -18,23 +18,23 @@
 ## Below are the repo for some of the APIs
 - conda install -c conda-forge keras
 - conda install -c menpo opencv
--- conda install -c conda-forge pyqtgraph
--- conda install -c conda-forge tqdm
--- pip install tensorflow
--- conda install -c anaconda protobuf
--- conda install -c stuwilkins protobuf
--- conda install -c conda-forge matplotlib
--- conda install -c anaconda keras-gpu
--- conda install -c mlgill imutils
--- conda install -c anaconda pyzmq
--- conda install -c conda-forge typing
--- conda install -c conda-forge decorator
--- conda install -c conda-forge pytables
--- conda install -c conda-forge packaging
--- conda install -c conda-forge jupyterlab_launcher
--- conda install -c conda-forge dlib=19.4
--- conda install -c conda-forge pillow
--- conda install -c numba numba
+- conda install -c conda-forge pyqtgraph
+- conda install -c conda-forge tqdm
+- pip install tensorflow
+- conda install -c anaconda protobuf
+- conda install -c stuwilkins protobuf
+- conda install -c conda-forge matplotlib
+- conda install -c anaconda keras-gpu
+- conda install -c mlgill imutils
+- conda install -c anaconda pyzmq
+- conda install -c conda-forge typing
+- conda install -c conda-forge decorator
+- conda install -c conda-forge pytables
+- conda install -c conda-forge packaging
+- conda install -c conda-forge jupyterlab_launcher
+- conda install -c conda-forge dlib=19.4
+- conda install -c conda-forge pillow
+- conda install -c numba numba
 
 # Language
 Python 3.6

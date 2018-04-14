@@ -44,8 +44,8 @@ Python 3.6
 1. Clone this repository
 2. FaceNet model : [FaceNet Pre trained Model](https://drive.google.com/open?id=1q0x79DTIKojNHSctivsAHYpvoTPnt0Oo)
 Download facenet pre trained model from above Google Drive Path and put it inside below folders
-facenet/model/
-trained_model/facenet/
+- facenet/model/
+- trained_model/facenet/
 3. You are all set
 
 # Run

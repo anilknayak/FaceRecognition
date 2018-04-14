@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+# Welcome to Face Recognition Using Various Deep Learning Architecture
 
-You can use the [editor on GitHub](https://github.com/anilknayak/FaceRecognition/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Required Python APIs to run the system
+1. pyqtgraph
+2. numpy
+3. scikit-learn
+4. keras
+5. tensorflow
+6. json
+7. imutils
+8. opencv3
+9. tqdm
+10. protobuf
+11. dlib
+12. matplotlib
 
-### Markdown
+## Below are the repo for some of the APIs
+conda install -c conda-forge keras
+conda install -c menpo opencv
+conda install -c conda-forge pyqtgraph
+conda install -c conda-forge tqdm
+pip install tensorflow
+conda install -c anaconda protobuf
+conda install -c stuwilkins protobuf
+conda install -c conda-forge matplotlib
+conda install -c anaconda keras-gpu
+conda install -c mlgill imutils
+conda install -c anaconda pyzmq
+conda install -c conda-forge typing
+conda install -c conda-forge decorator
+conda install -c conda-forge pytables
+conda install -c conda-forge packaging
+conda install -c conda-forge jupyterlab_launcher
+conda install -c conda-forge dlib=19.4
+conda install -c conda-forge pillow
+conda install -c numba numba
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Language
+Python 3.6
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Setup
+1. Clone this repository
+2. FaceNet model : [FaceNet Pre trained Model](https://drive.google.com/open?id=1q0x79DTIKojNHSctivsAHYpvoTPnt0Oo)
+Download facenet pre trained model from above Google Drive Path and put it inside below folders
+facenet/model/
+trained_model/facenet/
+3. You are all set
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anilknayak/FaceRecognition/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Run
+1. For GUI application run app.py
+2. for training run train.py with your training instructions
+3. To update configuration file as per you training instruction go to [Configure Face Recognition]()

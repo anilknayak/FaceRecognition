@@ -16,8 +16,8 @@
 12. matplotlib
 
 ## Below are the repo for some of the APIs
--- conda install -c conda-forge keras
--- conda install -c menpo opencv
+- conda install -c conda-forge keras
+- conda install -c menpo opencv
 -- conda install -c conda-forge pyqtgraph
 -- conda install -c conda-forge tqdm
 -- pip install tensorflow

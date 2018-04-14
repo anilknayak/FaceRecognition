@@ -50,7 +50,10 @@ Download facenet pre trained model from above Google Drive Path and put it insid
 
 ## System Architecture Diagram
 1. GUI Architecture
-![GUI Architecture](https://github.com/anilknayak/FaceRecognition/blob/master/ApplicationArchitecture.jpg)
+![GUI Architecture](https://github.com/anilknayak/FaceRecognition/blob/master/ApplicationArchitecture1.jpg)
+
+2. Training Architecture
+![Training System Architecture](https://github.com/anilknayak/FaceRecognition/blob/master/ApplicationTrainingArchitecture.jpg)
 
 ## Run
 1. For GUI application run app.py

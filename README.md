@@ -51,4 +51,4 @@ trained_model/facenet/
 # Run
 1. For GUI application run app.py
 2. for training run train.py with your training instructions
-3. To update configuration file as per you training instruction go to [Configure Face Recognition]()
+3. To update configuration file as per you training instruction go to [Configure Face Recognition - Not Ready]()
